@@ -27,7 +27,7 @@ print(' Action Max :- ', A_MAX)
 ram = buffer.MemoryBuffer(MAX_BUFFER)
 trainer = train.Trainer(S_DIM, A_DIM, A_MAX, ram)
 # threshold = 950
-# trainer.load_models(threshold)
+# trainer.load_models(load_dir='Model_history_cartesian/',episode=threshold)
 
 avg_reward = 0
 success_count=0
@@ -89,7 +89,7 @@ for _ep in range(MAX_EPISODES):
 
 
     if _ep%50 == 0:
-        trainer.save_models(save_dir='Model_history_Cartesian/' , episode_count=_ep)
+        trainer.save_models(save_dir='Model_history_Joint/' , episode_count=_ep)
         print(f'success " {success_count} / 50')
 
         success_count=0

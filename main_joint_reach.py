@@ -25,8 +25,8 @@ print(' Action Max :- ', A_MAX)
 
 ram = buffer.MemoryBuffer(MAX_BUFFER)
 trainer = train.Trainer(S_DIM, A_DIM, A_MAX, ram)
-# threshold = 950
-# trainer.load_models(threshold)
+# threshold = 2850
+# trainer.load_models(load_dir='Model_history_Joint/',episode=threshold)
 
 avg_reward = 0
 success_count=0

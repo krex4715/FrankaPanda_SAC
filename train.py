@@ -127,14 +127,14 @@ class Trainer:
 		torch.save(self.target_critic.state_dict(), './' + save_dir + str(episode_count) + '_critic.pt')
 		print('Models saved successfully')
 
-	def load_models(self, episode):
+	def load_models(self, load_dir,episode):
 		"""
 		loads the target actor and critic models, and copies them onto actor and critic models
 		:param episode: the count of episodes iterated (used to find the file name)
 		:return:
 		"""
-		self.actor.load_state_dict(torch.load('./Model_history/' + str(episode) + '_actor.pt'))
-		self.critic.load_state_dict(torch.load('./Model_history/' + str(episode) + '_critic.pt'))
+		self.actor.load_state_dict(torch.load('./'+load_dir + str(episode) + '_actor.pt'))
+		self.critic.load_state_dict(torch.load('./'+load_dir + str(episode) + '_critic.pt'))
 		utils.hard_update(self.target_actor, self.actor)
 		utils.hard_update(self.target_critic, self.critic)
 		print('Models loaded succesfully')
