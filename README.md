@@ -22,7 +22,7 @@
 
 I conducted Reinforcement Learning model learning in Cartesian Space and Joint Space Action
 #### Start
-![joint0](/image/joint_500.gif)
+![joint0](/image/joint_0.gif)
 
 #### After 500 Episode
 ![joint500](/image/joint_500.gif)
