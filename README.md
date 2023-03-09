@@ -12,7 +12,7 @@
 | ![PandaReach-v3](/image/reach.png) |         ![BiPedalWalker-v2](/image/biopedal.gif)         |
 
 
-
+I conducted SAC model learning to perform appropriate missions in a Franca-gym environment.
 
 
 
@@ -31,6 +31,7 @@ I conducted Reinforcement Learning model learning in Cartesian Space and Joint S
 ## Cartesian Action Agent
 
 #### Start
-
+![cart500](/image/cart_0.gif)
 #### After 200 Episode
 
+![cart500](/image/cart_500.gif)
