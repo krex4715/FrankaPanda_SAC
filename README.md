@@ -11,3 +11,21 @@
 |         `PandaReach-v3`          |                 `BiPedalWalker-v2`                 |
 | ![PandaReach-v3](/image/reach.png) |         ![BiPedalWalker-v2](/image/biopedal.gif)         |
 
+
+
+
+I conducted Reinforcement Learning model learning in Cartesian Space and Joint Space.
+
+
+
+## Joint Action Agent
+
+### After 500 Episode
+
+
+
+## Cartesian Action Agent
+
+
+### After 200 Episode
+
