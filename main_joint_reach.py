@@ -25,8 +25,8 @@ print(' Action Max :- ', A_MAX)
 
 ram = buffer.MemoryBuffer(MAX_BUFFER)
 trainer = train.Trainer(S_DIM, A_DIM, A_MAX, ram)
-# threshold = 2850
-# trainer.load_models(load_dir='Model_history_Joint/',episode=threshold)
+threshold = 550
+trainer.load_models(load_dir='Model_history_Joint/',episode=threshold)
 
 avg_reward = 0
 success_count=0
@@ -76,7 +76,7 @@ for _ep in range(MAX_EPISODES):
             loss_actors.append(loss_actor)
             loss_critics.append(loss_critic)
         
-        # time.sleep(0.03)
+        time.sleep(0.04)
 
         if terminated:
             break

@@ -20,12 +20,16 @@ I conducted Reinforcement Learning model learning in Cartesian Space and Joint S
 
 ## Joint Action Agent
 
-#### After 500 Episode
+#### Start
 
+
+#### After 500 Episode
+![joint500](/image/joint_500.gif)
 
 
 ## Cartesian Action Agent
 
+#### Start
 
 #### After 200 Episode
 

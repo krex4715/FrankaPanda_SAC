@@ -26,8 +26,8 @@ print(' Action Max :- ', A_MAX)
 
 ram = buffer.MemoryBuffer(MAX_BUFFER)
 trainer = train.Trainer(S_DIM, A_DIM, A_MAX, ram)
-# threshold = 950
-# trainer.load_models(load_dir='Model_history_cartesian/',episode=threshold)
+threshold = 300
+trainer.load_models(load_dir='Model_history_cartesian/',episode=threshold)
 
 avg_reward = 0
 success_count=0
@@ -36,7 +36,7 @@ success_count=0
 loss_actors = []
 loss_critics = []
 for _ep in range(MAX_EPISODES):
-    # _ep = _ep+threshold
+    _ep = _ep+threshold
     observation, info = env.reset()
 
     print('EPISODE :- ', _ep)
@@ -77,7 +77,7 @@ for _ep in range(MAX_EPISODES):
             loss_actors.append(loss_actor)
             loss_critics.append(loss_critic)
         
-        # time.sleep(0.03)
+        # time.sleep(0.04)
 
         if terminated:
             break
@@ -89,7 +89,7 @@ for _ep in range(MAX_EPISODES):
 
 
     if _ep%50 == 0:
-        trainer.save_models(save_dir='Model_history_Joint/' , episode_count=_ep)
+        trainer.save_models(save_dir='Model_history_cartesian/' , episode_count=_ep)
         print(f'success " {success_count} / 50')
 
         success_count=0
