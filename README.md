@@ -12,7 +12,7 @@
 | ![PandaReach-v3](/image/reach.png) |         ![BiPedalWalker-v2](/image/biopedal.gif)         |
 
 
-I conducted SAC model learning to perform appropriate missions in a Franca-gym environment.
+I conducted SAC model reinforcement learning to perform appropriate missions in a Franca-gym environment.
 
 
 
